@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Generator menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>AI-generator menu</h1>
+  <form id="menuForm">
+    <label>Liczba gości:
+      <input name="guests" type="number" value="30" required>
+    </label>
+    <label>Liczba dni:
+      <input name="days" type="number" value="7" required>
+    </label>
+    <label>Typ kuchni:
+      <select name="cuisine">
+        <option value="ukraińska">Ukraińska</option>
+        <option value="włoska">Włoska</option>
+        <option value="międzynarodowa" selected>Międzynarodowa</option>
+      </select>
+    </label>
+    <label>Szczególne wymagania:
+      <textarea name="preferences" placeholder="Np. bez wieprzowiny, więcej warzyw"></textarea>
+    </label>
+    <button type="submit">Wygeneruj menu</button>
+  </form>
+
+  <pre id="resultArea"></pre>
+
+  <script src="script.js"></script>
+</body>
+</html>
