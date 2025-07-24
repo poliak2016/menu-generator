@@ -29,7 +29,6 @@ Wymagania:
 - żadna potrawa nie może się powtarzać więcej niż dwa razy.
 Zwróć wynik w formacie tekstowym, czytelnym dla człowieka.
 `; 
-
   try {
     const completion = await openai.chat.completions.create({
       model: 'gpt-3.5-turbo',
